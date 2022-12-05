@@ -1248,6 +1248,16 @@ a.stock_tab_activ {
   .gallery__wrap .gallery__block {
     width: 100%;
   }
+  .gallery__popup .close_gallery {
+    right: 6px;
+    top: 4px;
+  }
+}
+@media (max-width: 375px) {
+  .gallery__popup .close_gallery {
+    right: 10px;
+    top: 9px;
+  }
 }
 @media (max-width: 320px) {
   .gallery h2 {
