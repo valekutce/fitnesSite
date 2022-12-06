@@ -3123,3 +3123,178 @@ ul.trener_info {
     left: 128px;
   }
 }
+
+/* ======================= Services Template ==================== */ 
+/* Home Block Services Page */
+
+.services-home {
+  width: 100%;
+  position: relative;
+  padding-bottom: 85px;
+  background:
+  linear-gradient(180deg, #00100F 0%, rgba(0, 18, 17, 0.95) 100%),
+  url(../img/fonServices.png),#000000;
+  background-size: cover;
+  .breadcrumbs {
+    margin-bottom: 0;
+  }
+  .lypLeft {
+    left: 155px;
+  }
+  .lypRight {
+    left: 710px;
+  }
+}
+.services__info {
+  width: 555px;
+  max-width: 100%;
+  padding-top: 55px;
+  h1 {
+    margin-bottom: 14px;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $textIcon;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .services__info p {
+    text-align: justify;
+  }
+}
+
+/* Section Directions - Направления занятий */ 
+
+.directions {
+  width: 100%;
+  background-color: #00100F;
+  padding: 120px 0;
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+.directions_items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.directions_item {
+  position: relative;
+  width: 340px;
+  max-width: 100%;
+  height: 350px;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.directions_info {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  background: rgba(42, 181, 173, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 44px 20px;
+  p {
+    font-family: 'DelaGothicOne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $textIcon;
+  }
+}
+
+@media (max-width: 1024px) {
+  .directions_item {
+    width: 310px;
+  }
+}
+
+@media (max-width: 820px) {
+  .directions_items {
+    justify-content: space-evenly;
+  }
+  .directions_item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 667px) {
+  .directions_item {
+    width: 280px;
+  }
+}
+
+/* Section club card - Клубная карта */ 
+
+.card {
+  width: 100%;
+  padding: 10px 0 120px;
+  background-color: #00100F;
+  background-image: url(../img/Freeze1.png);  
+  background-repeat: no-repeat;
+  background-position: -180px 60%;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .stock_tabs {
+    width: 965px;
+    max-width: 100%;
+  }
+}
+.card_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.card_info {
+  width: 525px;
+  max-width: 100%;
+  h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 141.9%;
+    text-transform: uppercase;
+    color: $textIcon;
+    margin-bottom: 14px;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $textIcon;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .card_info {
+    position: relative;
+    margin: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(181, 181, 181, 0.2)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(181, 181, 181, 0.2) 100%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 20px;
+    z-index: 10;
+  }
+}

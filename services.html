@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/style.css/style.css">
-    <title>Фитнес Сайт - Главная страница</title>
+    <title>Страница с Услугами Тренажёрного зала</title>
 </head>
-<body>
-    
+<body id="services" class="services">
     <div class="main">
         <header>
             <div class="top-header">
@@ -23,11 +22,11 @@
             <div class="header-nav">
                 <div class="container">
                     <div class="header-nav_wrap">
-                        <div class="header_logo"><a href="#"><img src="./assets/img/mainLogo/mainLogoWhite.png" alt="main Logo"></a></div>
+                        <div class="header_logo"><a href="index.html"><img src="./assets/img/mainLogo/mainLogoWhite.png" alt="main Logo"></a></div>
                         <nav class="nav_mobile">
                             <ul class="nav-items">
                                 <li class="menu-item"><a href="about.html">О клубе</a></li>
-                                <li class="menu-item"><a href="services.html">Услуги</a></li>
+                                <li class="menu-item"><a href="#">Услуги</a></li>
                                 <li class="menu-item"><a href="#">Галерея</a></li>
                                 <li class="menu-item"><a href="#">Клубные карты</a></li>
                                 <li class="menu-item"><a href="#">Расписание</a></li>
@@ -43,131 +42,95 @@
                 <div class="bars_menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
             </div>
         </header>
-
-        <!-- Главный Блок Main Block -->
-
-        <div class="home-block main">
+        <div class="services-home">
             <div class="container">
-                <div class="home-block_wrap">
-                <div class="home-block_info">
-                    <h1>Создай сайт<br> своей мечты <br><span>С шаблоном Фитнес</span></h1>
-                    <ul class="home-block_list">
-                        <li>Гибкая клубная карта</li>
-                        <li>Персональные тренировки</li>
-                        <li>Все самые продвинутые программы 2022 года</li>
-                    </ul>
-                    <div class="home-block_btn"><button class="btn btnMehr">Узнать подробнее</button><button class="btn btnBer">Рассчитать стоимость</button></div>
+                <div class="breadcrumbs"><a href="index.html">Главная </a><span>/ Услуги</span></div>
+                <div class="services__info">
+                    <h1>Услуги</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis nemo dolorum tempore cupiditate quae incidunt quisquam, voluptate vel ratione sapiente suscipit a nesciunt sequi nulla est voluptatibus repudiandae aperiam ad! Inventore, repellat. Asperiores accusantium velit, atque sed quo delectus.</p>
+                    <button class="btn btnMehr">Записаться</button>
                 </div>
-                <div class="home-block_items">
-                    <div class="home-block_item"><span>500 000 м2</span><span>Площадь зала</span></div>
-                    <div class="home-block_item"><span>100 500</span><span>Тренажеров VIP уровня</span></div>
-                    <div class="home-block_item"><span>Бассейны и <br></span><span>СПА центр</span></div>
-                </div>
-            </div>
             </div>
             <div class="lypLeft"></div>
             <div class="lypRight"></div>
         </div>
 
-        <!-- Раздел Клубная Карта -->
+        <!-- Раздел Directions - Направления занятий -->
 
-        <section id="Club-card" class="club-card">
+        <section id="Directions" class="directions">
             <div class="container">
-                <h2>Информация <span>о клубной карте</span></h2>
-                <div class="club-card_items">
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon10.svg" alt="icon"><span>Тренажерный зал</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon9.svg" alt="icon"><span>Групповые программы</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon8.svg" alt="icon"><span>Бассейн</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon7.svg" alt="icon"><span>Вводные тренировки</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon6.svg" alt="icon"><span>Единоборства</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon5.svg" alt="icon"><span>Бесплатная парковка</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon4.svg" alt="icon"><span>Клубная жизнь</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon3.svg" alt="icon"><span>Фитнес диагностика</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon2.svg" alt="icon"><span>Полотенца</span></div>
-                    <div class="club-card_item"><img src="./assets/img/cartIcon/cartIcon1.svg" alt="icon"><span>Халаты</span></div>
+                <h2>Направления <span>занятий</span></h2>
+                <div class="directions_items">
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions1.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Mind Body</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions2.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Силовые и функциональные тренировки</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions3.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Кардиограммы и аэробика</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions4.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Тренажерный зал</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions5.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Водные программы</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions6.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Единоборства</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions7.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Танцы</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions8.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Персональный тренинг</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions9.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Йога</p>
+                        </div>
+                    </div>
+                    <div class="directions_item">
+                        <img src="./assets/img/Directions/Directions10.png" alt="Фото направления занятий">
+                        <div class="directions_info">
+                            <p>Фитнес-тестирование</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Раздел Stock - Акции -->
-
-        <section id="Stock" class="stock">
-            <div class="container">
-                <h2>Акции</h2>
-                <div class="stock_tabs">
-                    <a href="#">Аквапарк</a><a href="#">Термы</a><a href="#">СПА</a><a href="#">Праздники</a><a href="#" class="stock_tab_activ">Фитнес</a><a href="#">Боулинг</a>
-                </div>
-                <!-- Slider main container -->
-                <div class="stock_sliders">
-                    <!-- Slides -->
-                    <div class="stock_slide"><img src="./assets/img/sliders/slider1.png" alt="foto slider"></div>
-                    <div class="stock_slide"><img src="./assets/img/sliders/slider2.png" alt="foto slider"></div>
-                    <div class="stock_slide"><img src="./assets/img/sliders/slider3.png" alt="foto slider"></div>
-                    <div class="stock_slide"><img src="./assets/img/sliders/slider1.png" alt="foto slider"></div>
-                    <div class="stock_slide"><img src="./assets/img/sliders/slider2.png" alt="foto slider"></div>
-                    <div class="stock_slide"><img src="./assets/img/sliders/slider3.png" alt="foto slider"></div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Раздел News - Новости -->
-
-        <section id="News" class="news">
-            <div class="container">
-                <h2><span>Новости</span> фитнес клуба</h2>
-                <div class="news_sliders">
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News1.jpg" alt="news foto"></div>
-                        <h3>Приглашаем вас на презентацию новой студии «Body Art»</h3>
-                        <p>Body Art – сочетание физической тренировки и дыхательных практик.</p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News2.jpg" alt="news foto"></div>
-                        <h3>Выиграй клубную карту на 6 месяцев!</h3>
-                        <p>Испытай свою выносливость на соревнованиях и выиграй клубную карту на 6 месяцев!</p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News3.jpg" alt="news foto"></div>
-                        <h3>Самооборона для женщин Hands Off</h3>
-                        <p>Не будь “легкой” мешенью, занимайся в Moreon-Fitness</p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News4.jpg" alt="news foto"></div>
-                        <h3>Приглашаем вас на презентацию новой студии «Body Art»</h3>
-                        <p>Body Art – сочетание физической тренировки и дыхательных практик.</p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News1.jpg" alt="news foto"></div>
-                        <h3>Приглашаем вас на презентацию новой студии «Body Art»</h3>
-                        <p></p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News2.jpg" alt="news foto"></div>
-                        <h3>Выиграй клубную карту на 6 месяцев!</h3>
-                        <p>Испытай свою выносливость на соревнованиях и выиграй клубную карту на 6 месяцев!</p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News3.jpg" alt="news foto"></div>
-                        <h3>Самооборона для женщин Hands Off</h3>
-                        <p>Не будь “легкой” мешенью, занимайся в Moreon-Fitness</p>
-                    </div>
-                    <div class="block_slider">
-                        <div class="blocl_slider_img"><img src="./assets/img/News/News4.jpg" alt="news foto"></div>
-                        <h3>Приглашаем вас на презентацию новой студии «Body Art»</h3>
-                        <p>Body Art – сочетание физической тренировки и дыхательных практик.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <!-- Раздел Team - Команда -->
 
         <section id="Team" class="team">
             <div class="container">
-                <h2>Расписание и команда</h2>
-                <div class="stock_tabs">
-                    <a href="#">Расписание групповых занятий</a><a href="#">Расписание бассейна</a><a href="#">Расписание бассейна “Тоник”</a><a href="#">Расписание детского центра</a>
-                </div>
+                <h2>Команда</h2>
                 <div class="team_slider">
                     <div class="team_slider_wrap">
                         <div class="team_slider_block"> 
@@ -183,8 +146,8 @@
                             <div class="team_slider_name">
                                 <a href="single-trener.html">
                                     <span>Иван Иванов</span><span>Мастер тренер</span>
-                                </a>
-                            </div>
+
+                            </div> </a>
                         </div>
                     </div>
                     <div class="team_slider_wrap">
@@ -201,8 +164,8 @@
                             <div class="team_slider_name">
                                 <a href="single-trener.html">
                                     <span>Иван Иванов</span><span>Мастер тренер</span>
-                                </a>
-                            </div>
+
+                            </div> </a>
                         </div>
                     </div>
                     <div class="team_slider_wrap">
@@ -219,8 +182,8 @@
                             <div class="team_slider_name">
                                 <a href="single-trener.html">
                                     <span>Иван Иванов</span><span>Мастер тренер</span>
-                                </a>
-                            </div>
+
+                            </div> </a>
                         </div>
                     </div>
                     <div class="team_slider_wrap">
@@ -237,8 +200,8 @@
                             <div class="team_slider_name">
                                 <a href="single-trener.html">
                                     <span>Иван Иванов</span><span>Мастер тренер</span>
-                                </a>
-                            </div>
+
+                            </div> </a>
                         </div>
                     </div>
                     <div class="team_slider_wrap">
@@ -255,8 +218,8 @@
                             <div class="team_slider_name">
                                 <a href="single-trener.html">
                                     <span>Иван Иванов</span><span>Мастер тренер</span>
-                                </a>
-                            </div>
+
+                            </div> </a>
                         </div>
                     </div>
                     <div class="team_slider_wrap">
@@ -281,45 +244,77 @@
             </div>
         </section>
 
-        <!-- Раздел Фотогаллерея -->
-
-        <section id="Gallery" class="gallery">
+        <!-- Раздел club card - Клубная карта -->
+        
+        <section id="Card" class="card">
             <div class="container">
-                <h2>Фотогалерея</h2>
-                <div class="gallery__wrap">
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery1.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery2.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery3.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery4.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery5.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery6.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery1.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery2.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery3.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery4.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery5.png" alt="foto"></div>
-                    <div class="gallery__block"><img src="./assets/img/gallery/gallery6.png" alt="foto"></div>
+                <h2>Клубные карты</h2>
+                <div class="stock_tabs">
+                    <a href="#" class="stock_tab_activ">Фитнес классик</a><a href="#">Фитнес+банный комплекс</a><a href="#">Фитнес+СПА</a><a href="#">Все включено</a><a href="#">Корпоративная карта</a>
                 </div>
-                <div class="gallery_button"><button class="btnBer all_gallery">Смотреть все фото</button></div>
-            </div>
-            <div class="gallery__popup">
-                <span class="close_gallery">&times;</span>
-                <h3>Територия тренажерного зала</h3>
-                <img src="./assets/img/gallery/gallery1.png" alt="foto">
+                <div class="card_wrap">
+                    <div class="card_info">
+                        <h2>Фитнес классик</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus enim deleniti vero accusantium distinctio cum veniam? Voluptas quisquam sint, unde aliquam autem neque.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime distinctio, rerum modi obcaecati minus veniam in reiciendis. Sapiente, aperiam aut! Veniam in reiciendis. Sapiente, aperiam aut!</p>
+                        <button class="btn btnMehr">Расчитать стоимость карты</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Раздел Brand -->
+        <!-- Раздел Center - Детский Центр -->
 
-        <section id="Brand" class="brand">
+        <section id="Center" class="center">
             <div class="container">
-                <div class="brand_wrap">
-                    <div class="brand_block"><img src="./assets/img/brand/brand1.png" alt="icon"></div>
-                    <div class="brand_block"><img src="./assets/img/brand/brand2.png" alt="icon"></div>
-                    <div class="brand_block"><img src="./assets/img/brand/brand3.png" alt="icon"></div>
-                    <div class="brand_block"><img src="./assets/img/brand/brand4.png" alt="icon"></div>
-                    <div class="brand_block"><img src="./assets/img/brand/brand5.png" alt="icon"></div>
-                    <div class="brand_block"><img src="./assets/img/brand/brand6.png" alt="icon"></div>
+                <div class="center_info">
+                    <h2>Детский центр</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, minima?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt perspiciatis voluptate perferendis, magni eligendi magnam nam provident saepe soluta dolores?</p>
+                    <div class="center_btn"><button class="btn btnMehr">Записаться на бесплатное пробное занятие</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел spa - Бани и Бассены -->
+
+        <section id="spa" class="spa">
+            <div class="container">
+                <div class="stock_tabs">
+                    <a href="#" class="stock_tab_activ">Бани и бассейны</a><a href="#">Спортивный бассейн</a><a href="#">СПА</a><a href="#">Термы</a><a href="#">Золотые рыбки</a><a href="#">Боулинг</a>
+                </div>
+                <div class="spa_wrap">
+                    <div class="spa_info">
+                        <h2>Бани и бассейны</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo iure quos, reiciendis enim asperiores debitis?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus vero soluta assumenda ipsam beatae sit. Quae optio facere vitae. Cupiditate voluptas similique nemo itaque voluptates!</p>
+                        <div class="spa_info_btn"><button class="btn btnMehr">Записаться на гостевой визит</button></div>
+                    </div>
+                    <div class="spa_sliders">
+                        <div class="spa_slider_block"><img src="./assets/img/spa/spa.png" alt="Slider Foto"></div>
+                        <div class="spa_slider_block"><img src="./assets/img/spa/spa.png" alt="Slider Foto"></div>
+                        <div class="spa_slider_block"><img src="./assets/img/spa/spa.png" alt="Slider Foto"></div>
+                        <div class="spa_slider_block"><img src="./assets/img/spa/spa.png" alt="Slider Foto"></div>
+                        <div class="spa_slider_block"><img src="./assets/img/spa/spa.png" alt="Slider Foto"></div>
+                        <div class="spa_slider_block"><img src="./assets/img/spa/spa.png" alt="Slider Foto"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел bar - Фитнес Бар -->
+
+        <section id="bar" class="bar">
+            <div class="container">
+                <h2>Фитнес <span>бар</span></h2>
+                <div class="bar_wrap">
+                    <div class="bar_img"><img src="./assets/img/bar.png" alt="фото"></div>
+                    <div class="bar_info">
+                        <h2> <span>Фитнес бар</span> </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia voluptatem eos culpa! In suscipit culpa qui, totam sequi commodi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsa molestias nam, dolorem, alias quaerat et atque eius ipsum quia rem accusantium hic explicabo? Non.</p>
+                        <div class="bar_button"><button class="btn btnBer">Смотреть меню</button></div>
+                    </div>   
                 </div>
             </div>
         </section>
@@ -328,15 +323,6 @@
 
         <section id="Contact" class="contact">
             <div class="container">
-                <h2><span>Шаблон Fitness</span> для бизнеса </h2>
-                <div class="yasnevo">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam repellat veniam maiores nisi autem inventore excepturi dolorum, tenetur nulla iure nihil optio sapiente ex distinctio voluptatum explicabo, vel consequuntur voluptates tempore. </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui beatae vel quod repudiandae necessitatibus inventore.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus debitis veniam aspernatur accusamus officia illo omnis! Laborum cumque similique vitae magnam, ipsa quibusdam voluptates, laboriosam ipsam incidunt, quasi architecto.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, itaque cum. Iusto accusantium voluptatibus vel ab consectetur ipsa debitis dicta minus similique ut corrupti officiis tempore magni quis, inventore dignissimos nam. Harum ipsa beatae fuga fugiat minus vitae laboriosam deleniti expedita quidem labore, ab iure est maiores, ea quas iste.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nemo reiciendis enim eaque officiis, exercitationem quibusdam earum fugiat aliquam illum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius sint nostrum excepturi. Aliquam corrupti incidunt veritatis quos itaque odit facere tenetur a voluptates quis odio debitis aspernatur quibusdam ad deleniti unde aperiam, nam qui ipsa optio minima repellendus ratione dolor ex. Quasi fugiat alias impedit aliquid reprehenderit nam esse, beatae nemo illo. Dicta autem ipsum veniam magni porro.</p>
-                </div>
                 <div class="contact_wrap">
                     <div class="contact_info">
                         <h2>Контакты</h2>
@@ -351,6 +337,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Footer -->
 
