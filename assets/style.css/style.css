@@ -3805,4 +3805,7 @@ ul.trener_info li a {
   #Crossfit .team .container {
     max-width: 95%;
   }
+  #Crossfit .gallery {
+    overflow: hidden;
+  }
 }
