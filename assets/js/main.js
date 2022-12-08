@@ -174,12 +174,14 @@ $('.crossfit__slider').slick({
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
+                    arrows: false,
                 }
             },
             {
                 breakpoint: 426,
                 settings: {
                     slidesToShow: 1,
+                    arrows: false,
                 }
             }
 
