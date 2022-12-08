@@ -3694,6 +3694,9 @@ ul.trener_info li a {
 #Crossfit .team_slider_block {
   margin: 0 10px 10px;
 }
+#Crossfit .team_slider_block img {
+  width: 100%;
+}
 
 #Crossfit .team_slider i.fa.fa-angle-left.slick-arrow, #Crossfit .team_slider i.fa.fa-angle-right.slick-arrow {
   position: absolute;
