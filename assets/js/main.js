@@ -86,40 +86,6 @@ $(document).ready(function(){
         ]
     });
 
-    //============ На странице КроссФит ============= //
-
-    $('#Crossfit .team_slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 3,
-                    arrows: false,
-                }
-            },
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 426,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-
-        ]
-    });
 
     $('.effect_slider,.spa_sliders').slick({
         slidesToShow: 1,
@@ -184,6 +150,41 @@ $('.crossfit__slider').slick({
     variableWidth: true,
     arrows: false,
 });
+
+    //============ На странице КроссФит ============= //
+
+    $('#Crossfit .team_slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+
+        ]
+    });
   
 
 
