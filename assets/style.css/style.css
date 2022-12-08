@@ -347,6 +347,10 @@ nav .lypLeft, nav .lypRight {
   text-decoration: none;
 }
 
+.menu-item_activ {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .close_nav {
   position: absolute;
   top: 30px;
@@ -3141,10 +3145,12 @@ a.stock_tab_activ {
   .nav_mobile .lypLeft {
     left: 50px;
     top: 50px;
+    z-index: -1;
   }
   .nav_mobile .lypRight {
     bottom: 50px;
     right: 50px;
+    z-index: -1;
   }
   .nav_mobile_activ {
     height: 100vh;
@@ -3628,5 +3634,169 @@ ul.trener_info li a {
     border-radius: 12px;
     padding: 20px;
     z-index: 10;
+  }
+}
+/* ======================= Crossfit Template ==================== */
+/* Home Block Crossfit Page */
+.crossfit-home {
+  width: 100%;
+  padding-bottom: 115px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(34.84%, rgba(0, 22, 21, 0.87)), to(rgba(0, 22, 21, 0.783))), url(../img/crossfit-fon.jpg);
+  background: linear-gradient(90deg, rgba(0, 22, 21, 0.87) 34.84%, rgba(0, 22, 21, 0.783) 100%), url(../img/crossfit-fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.crossfit-home .breadcrumbs {
+  margin-bottom: 0;
+}
+.crossfit-home .lypLeft {
+  left: 140px;
+  top: 280px;
+}
+
+.crossfit__info {
+  width: 555px;
+  max-width: 100%;
+  padding-top: 69px;
+}
+.crossfit__info h1 {
+  margin-bottom: 14px;
+}
+.crossfit__info p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 425px) {
+  .crossfit__info h1 {
+    font-size: 35px;
+  }
+  p {
+    text-align: justify;
+  }
+}
+@media (max-width: 320px) {
+  .crossfit__info h1 {
+    font-size: 30px;
+  }
+}
+/* Раздел Team - Команда */
+#Crossfit .team {
+  background: linear-gradient(205deg, rgb(0, 16, 15) 43%, rgb(0, 16, 15) 43%);
+}
+
+#Crossfit .team_slider_block {
+  margin: 0 10px 10px;
+}
+
+#Crossfit .team_slider i.fa.fa-angle-left.slick-arrow, #Crossfit .team_slider i.fa.fa-angle-right.slick-arrow {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  cursor: pointer;
+}
+#Crossfit .team_slider i.fa.fa-angle-left.slick-arrow:hover, #Crossfit .team_slider i.fa.fa-angle-right.slick-arrow:hover {
+  color: #33B0AA;
+  border: 1px solid #33B0AA;
+}
+#Crossfit .team_slider i.fa.fa-angle-left.slick-arrow {
+  left: -55px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-right: 2px;
+}
+#Crossfit .team_slider i.fa.fa-angle-right.slick-arrow {
+  right: -55px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-left: 2px;
+}
+
+/* Section Фотогаллерея */
+.crossfit__slider ul.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.crossfit__slider ul.slick-dots li {
+  margin-right: 10px;
+}
+.crossfit__slider ul.slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+.crossfit__slider ul.slick-dots li:last-child {
+  margin-right: 0;
+}
+.crossfit__slider ul.slick-dots .slick-active button {
+  background-color: #ffffff;
+}
+
+.crossfit_slider_block {
+  position: relative;
+  width: 585px;
+  margin: 0 15px 10px;
+}
+.crossfit_slider_block img {
+  width: 100%;
+}
+.crossfit_slider_block::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.crossfit_slider_block.slick-active::after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .crossfit_slider_block {
+    width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .crossfit_slider_block {
+    width: 290px;
   }
 }
