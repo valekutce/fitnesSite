@@ -3695,6 +3695,9 @@ form .check {
       font-size: 26px;
     }
   }
+  form .check label input {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 320px) {

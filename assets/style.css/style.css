@@ -4047,6 +4047,9 @@ form .check + div {
   .form-question_title h2 {
     font-size: 26px;
   }
+  form .check label input {
+    margin-right: 10px;
+  }
 }
 @media (max-width: 320px) {
   .form-question_title h2 {
