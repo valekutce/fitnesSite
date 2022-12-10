@@ -308,7 +308,10 @@ let galleryBlock = document.querySelectorAll('.gallery__block'),
 $(function(){
     accordQuest = document.querySelectorAll('.accord_quest'),
     accordDescr = document.querySelectorAll('.accord_descr'),
-    accordIcon = document.querySelectorAll('.accord_quest i.fa');
+    accordIcon = document.querySelectorAll('.accord_quest i.fa'),
+    amptyLink = document.querySelectorAll('.ampty_link'),
+    dialog = document.querySelector('dialog'),
+    burg = document.querySelector('.burg');
 
     accordQuest.forEach((el) => {
         el.addEventListener('click', ()=> {
@@ -324,6 +327,30 @@ $(function(){
                 icon.setAttribute('class', 'fa fa-chevron-up');
             }
         });
+    });
+
+    amptyLink.forEach((el) => {
+        el.addEventListener('click', (e)=> {
+            e.preventDefault();
+            dialog.showModal();
+            setTimeout(()=> {
+                burg.classList.add('burg_activ');
+            }, 1000);
+        });
+    });
+
+    burg.addEventListener('click', ()=> {
+        burg.classList.remove('burg_activ');
+        setTimeout(()=> {
+            dialog.close();
+        }, 500);
+    });
+
+    window.addEventListener('load', ()=> {
+        dialog.showModal();
+        setTimeout(()=> {
+            burg.classList.add('burg_activ');
+        }, 1000);
     });
 
 });

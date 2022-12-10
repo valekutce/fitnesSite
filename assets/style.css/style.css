@@ -212,6 +212,76 @@ h2 span {
     display: block;
   }
 }
+dialog::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+dialog {
+  position: relative;
+  width: 80%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  background-color: #00100F;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 30px;
+}
+dialog h2 {
+  margin-bottom: 30px;
+}
+dialog p {
+  margin-bottom: 20px;
+}
+dialog p:last-child {
+  margin-bottom: 0;
+}
+dialog p a {
+  color: blue;
+}
+
+.burg {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.burg span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.burg span:nth-child(1), .burg span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.burg_activ span:nth-child(1) {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.burg_activ span:nth-child(2) {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .container {
   width: 1118px;
   max-width: 100%;
