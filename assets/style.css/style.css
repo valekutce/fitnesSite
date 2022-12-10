@@ -3639,7 +3639,6 @@ ul.trener_info li a {
 /* ======================= Crossfit Template ==================== */
 /* Home Block Crossfit Page */
 .crossfit-home {
-  position: relative;
   width: 100%;
   padding-bottom: 115px;
   background: -webkit-gradient(linear, left top, right top, color-stop(34.84%, rgba(0, 22, 21, 0.87)), to(rgba(0, 22, 21, 0.783))), url(../img/crossfit-fon.jpg);
