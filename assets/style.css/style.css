@@ -1125,7 +1125,7 @@ a.stock_tab_activ {
   .team h2 {
     font-family: "DelaGothicOne";
     font-style: normal;
-    font-size: 35px;
+    font-size: 24px;
     color: #FFFFFF;
     font-weight: 400;
     line-height: 141.9%;
@@ -1267,7 +1267,7 @@ a.stock_tab_activ {
   .gallery h2 {
     font-family: "DelaGothicOne";
     font-style: normal;
-    font-size: 35px;
+    font-size: 24px;
     color: #FFFFFF;
     font-weight: 400;
     line-height: 141.9%;
@@ -3639,6 +3639,7 @@ ul.trener_info li a {
 /* ======================= Crossfit Template ==================== */
 /* Home Block Crossfit Page */
 .crossfit-home {
+  position: relative;
   width: 100%;
   padding-bottom: 115px;
   background: -webkit-gradient(linear, left top, right top, color-stop(34.84%, rgba(0, 22, 21, 0.87)), to(rgba(0, 22, 21, 0.783))), url(../img/crossfit-fon.jpg);
@@ -3812,4 +3813,290 @@ ul.trener_info li a {
   #Crossfit .gallery {
     overflow: hidden;
   }
+}
+/* Section Videos club - Видео о Клубе */
+#Crossfit .videos-club {
+  background: #00100F;
+}
+#Crossfit .videos-club h2 {
+  position: relative;
+}
+#Crossfit .videos-club h2::before {
+  content: "Видео о нашем Тренажерном Зале";
+  position: absolute;
+  top: -40%;
+  left: 2%;
+  font-family: "DelaGothicOne";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 64.9%;
+  text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255), -1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  opacity: 0.08;
+  z-index: 10;
+}
+
+/* Section Форма с вопросами */
+.form-question {
+  width: 100%;
+  padding: 125px 15px;
+  background: #00100f url(../img/form-fon.png) right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-question_block {
+  width: 646px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.form-question_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-question_title h2 {
+  font-family: "DelaGothicOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.form-question_title p {
+  font-family: "Montserrat";
+  width: 463px;
+  max-width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin: auto;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+.div_inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.div_inputs div {
+  width: 309px;
+}
+.div_inputs div input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+  width: 100%;
+  height: 61px;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(181, 181, 181, 0.2)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(181, 181, 181, 0.2) 100%);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 130px;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(181, 181, 181, 0.2)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(181, 181, 181, 0.2) 100%);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+form .check {
+  width: 310px;
+  margin: 25px auto 30px;
+}
+form .check label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+form .check label input {
+  width: 20px;
+  height: 20px;
+}
+form .check + div {
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .form-question_title h2 {
+    font-size: 30px;
+  }
+  .div_inputs {
+    margin-bottom: 20px;
+  }
+  .div_inputs div {
+    width: 100%;
+  }
+  .div_inputs div:first-child {
+    margin-bottom: 20px;
+  }
+  form .check {
+    width: 310px;
+    margin: 15px auto 20px;
+  }
+}
+@media (max-width: 375px) {
+  .form-question_title h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 320px) {
+  .form-question_title h2 {
+    font-size: 21px;
+  }
+  .form-question_title p {
+    font-size: 14px;
+  }
+  form .check {
+    width: 100%;
+  }
+  .form-question .btnMehr {
+    padding: 16px 10px;
+  }
+}
+/* Section other destinations - Другие направления */
+#Destinations h2 {
+  position: relative;
+}
+#Destinations h2::before {
+  content: "Другие направления";
+  position: absolute;
+  top: -60%;
+  left: 2%;
+  font-family: "DelaGothicOne";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64.9%;
+  text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255), -1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  opacity: 0.08;
+  z-index: 10;
+}
+
+#Destinations .other-destinations_slider .team_slider_block img {
+  border-radius: 25px;
+}
+#Destinations .other-destinations_slider .team_slider_block .team_slider_name {
+  height: 110px;
+}
+#Destinations .other-destinations_slider .team_slider_block .team_slider_name a span {
+  font-family: "DelaGothicOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 1;
+}
+#Destinations .other-destinations_slider ul.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#Destinations .other-destinations_slider ul.slick-dots li {
+  margin-right: 10px;
+}
+#Destinations .other-destinations_slider ul.slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+#Destinations .other-destinations_slider ul.slick-dots li:last-child {
+  margin-right: 0;
+}
+#Destinations .other-destinations_slider ul.slick-dots .slick-active button {
+  background-color: #ffffff;
+}
+#Destinations .other-destinations_slider i.fa {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  cursor: pointer;
+}
+#Destinations .other-destinations_slider i.fa:hover {
+  color: #33B0AA;
+  border: 1px solid #33B0AA;
+}
+#Destinations .other-destinations_slider i.fa.fa-angle-left.slick-arrow {
+  left: -55px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-right: 2px;
+}
+#Destinations .other-destinations_slider i.fa.fa-angle-right.slick-arrow {
+  right: -55px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-left: 2px;
 }

@@ -187,6 +187,42 @@ $('.crossfit__slider').slick({
 
         ]
     });
+
+
+     //============ На странице КроссФит Слайдер Другие Направления Тренировок ============= //
+
+    $('#Crossfit .other-destinations_slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+
+        ]
+    });
   
 
 
