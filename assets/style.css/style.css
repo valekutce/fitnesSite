@@ -220,7 +220,7 @@ dialog::backdrop {
 }
 
 dialog {
-  position: relative;
+  position: fixed;
   width: 80%;
   font-family: "Montserrat";
   font-style: normal;
