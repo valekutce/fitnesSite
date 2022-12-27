@@ -958,7 +958,7 @@ a.stock_tab_activ {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 100%;
   cursor: pointer;
 }
